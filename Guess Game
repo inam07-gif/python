@@ -1,0 +1,31 @@
+import random
+import sys
+guess=0
+age=1
+score=0
+while True:
+ age=random.randint(1,10)
+ print(f"{age}")
+ guess=int(input("ENTER your guess b/w 1-10 (PRESS 0 TO EXIT): "))
+ 
+ if guess== 0:
+   print(f"CONGRATULATION YOUR SCORE WAS: {score}")
+   sys.exit(0)
+   
+ elif guess>age:
+   print("too high try again ")
+ elif guess<age:
+   print("too low try again")
+
+ elif guess==age:
+   print("you guessed it right")
+   score+=1
+
+
+
+
+
+
+
+
+
