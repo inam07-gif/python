@@ -1,0 +1,14 @@
+print("----------WELCOME TO COMPOUND INTEREST CALCULATOR-----------")
+a=0
+p=float(input("ENTER PRINCIPAL AMOUNT: "))
+r=float(input("ENTER ANNUAL INTEREST RATE: "))
+n=int(input("ENTER NUMBER OF TIMES:"))
+t=int(input("ENTER TIME(IN YEARS): "))
+
+mul=n*t
+r=r/100
+bas=((1)+r/n)
+a=p*pow(bas,mul)
+
+print(f"YOUR FINAL AMOUNT IS {a:.3f}")
+
