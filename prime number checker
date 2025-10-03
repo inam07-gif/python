@@ -1,0 +1,7 @@
+print("\n============THIS IS A PROJECT TO CHECK A GIVEN NUMBER IS PRIME OR NOT=======\n")
+num=int(input("ENter a number : "))
+score=0
+for x in range(1,num+1):
+ if num%x==0: score+=1
+if score==2:  print(f"THE GIVEN NUMBER {num} is a prime number....")
+else: print(f"the given number {num} not prime")
