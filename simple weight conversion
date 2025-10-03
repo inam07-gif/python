@@ -1,0 +1,34 @@
+print("Welcome to weight conversion simple project\n")
+
+ops= input(" Press 1 from Kg to grms\n Press 2 from grms to kg\n Press 3 to calculate BMI")[0]
+
+if ops=='1':
+    num=float(input("Enter number of kg: "))
+    result= num*1000
+    print(f"{num} kg to grms is: {result}")
+
+elif ops=='2':
+    num=float(input("Enter grms :"))
+    result=num/1000
+    print(f"{num}grms to kg: {result}")
+
+elif ops=='3':
+    num1=float(input("Enter weight in kg: "))
+    num2=float(input("Enter height in meters: "))
+    result=num1/num2**2
+
+    print(f"The BMI of your body with weight {num1} and height {num2} is : {result:.4f}")
+
+    if result<18.5:
+        print("YOU ARE UNDER WEIGHT")
+    elif result<=24.9 and result>=18.5:
+        print("YOU HAVE NORMAL WEIGHT")
+    elif result>=25 and result<=30:
+        print("YOU ARE OVERWEIGHT")
+    elif result>29.99:
+        print("YOU ARE OBESE")
+
+elif ops!=1 or 2 or 3 :
+    print("Your entered wrong key!")
+
+
