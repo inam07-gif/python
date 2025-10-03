@@ -1,0 +1,10 @@
+print("\n------------FIBONACCI SERIES------------------
+one=0
+two=1
+num=int(input("ENTER Number Of Elements You Wants to Prints: "))
+for x in range(0,num):
+  print(f"{one}")
+  next_number=one+two
+  one=two
+  two=next_number
+
