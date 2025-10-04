@@ -1,2 +1,2 @@
 # python
-from simple projects to  high level project. A journey of hope
+From simple projects to  high level project. A journey of successes. 
