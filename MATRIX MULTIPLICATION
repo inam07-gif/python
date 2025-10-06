@@ -1,0 +1,38 @@
+import sys
+m1=[]
+m2=[]
+m3=[]
+
+r1=int(input("Enter rows of 1st matrix: "))
+c1=int(input("Enter col in m1: "))
+
+r2=int(input("Enter rows of 2st matrix: "))
+c2=int(input("Enter col in m2: "))
+if c1 != r2:
+    print("Matrix addition not possible!")
+    sys.exit(0)
+for i in range (r1):
+  rows=[]
+  for j in range(c1):
+    add=int(input(f"ENTER ELEMENT NUMBER ({i}, {j}): "))
+    rows.append(add)
+  m1.append(rows)
+
+for x in range (r2):
+  rows1=[]
+  for y in range(c2):
+    adds=int(input(f"ENTER ELEMENT NUMBER ({x}, {y}): "))
+    rows1.append(adds)
+  m2.append(rows1)
+
+m3 = [[0 for _ in range(c2)] for _ in range(r1)]
+
+for m in range(r1):
+    for n in range(c2):
+       for k in range(c1):
+          m3[m][n]+=m1[m][k]*m2[k][n]
+          
+for u in range(c1):
+    for l in range(r2):
+        print(f"{m3[u][l]:02}", end=" ")
+    print()
