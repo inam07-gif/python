@@ -1,1 +1,3 @@
 I believe every line of code tells a story. From simple projects that taught me the basics to high-level projects that challenge my limits, my journey is one of growth, persistence, and hope. Each repository reflects experiments, learning curves, and milestones that shape me into a better developer. This is more than coding—it’s a journey of building, breaking, and rebuilding with purpose. A journey of hope, where every project takes me one step closer to my vision.
+
+STARTED ON: 1-10-2025
