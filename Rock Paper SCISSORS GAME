@@ -1,0 +1,24 @@
+import random
+print("======ROCK PAPER SCISSORs GAME======")
+sum=0
+
+while True:
+    b=random.randint(1,3)
+    move={1:"rock", 2:"paper", 3:"scissor"}
+
+    a=int(input("1-Rock\n2-Paper\n3-Scissor: "))
+    print("You chose:", move[a])
+    print("Computer chose:", move[b])
+
+    if a==b:
+        print("DRAW\n")
+
+    elif (a==1 and b==3) or (a==2 and b==1) or (a==3 and b==2):
+        print("You won!\n")
+        sum+=1
+
+    elif (a==1 and b==2) or (a==2 and b==3) or (a==3 and b==1):
+        print("You lost\n")
+        break
+
+print(f"You scored {sum}")
