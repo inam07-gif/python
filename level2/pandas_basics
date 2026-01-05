@@ -1,6 +1,5 @@
 import pandas as pd
 
-# ---------- Step 1: Take initial data ----------
 n = int(input("Enter number of employees: "))
 
 names = []
@@ -15,17 +14,18 @@ for i in range(n):
     classes.append(input("Class: "))
     jobs.append(input("Job: "))
 
-# Create initial DataFrame
+# Create DataFrame
 df = pd.DataFrame({
     "name": names,
     "age": ages,
     "Class": classes,
     "JOb": jobs
 })
+#Add new rows
 isy=input("do u want to add more").lower()
 
 if isy=="yes":
-# ---------- Step 2: Add new rows ----------
+
  m = int(input("\nHow many new employees to add? "))
 
  new_rows = []
@@ -45,10 +45,9 @@ if isy=="yes":
 # Concatenate
  df = pd.concat([df, new_df])
 
-# ---------- Step 3: Custom index ----------
+#  Custom index 
  df.index = [f"Employee {i}" for i in range(1, len(df) + 1)]
 
-# ---------- Final Output ----------
  print("\nFinal DataFrame:")
  print(df)
 else:
