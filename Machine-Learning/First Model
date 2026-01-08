@@ -1,0 +1,35 @@
+import numpy as np
+x_train = np.array([10, 20,30,40,50]) # as input
+y_train = np.array([300, 500,700,900,1100]) #with respect to x what is the true value 
+
+w=0 #slope
+b=100 #starting point
+learning_rate=0.001 
+m=len(x_train) # no.of models
+
+
+for epoch in range(3):
+  total_error=0
+  #print(f"w = {w}")   
+  for i in range(m):
+   print(f"x_train={x_train[i]}")   
+   print(f"y_train={y_train[i]}")  
+
+   x=x_train[i]
+   y=y_train[i]
+   prediction=w*x+b
+  
+   error=prediction-y
+   w=w-learning_rate*error*x
+   b=b-learning_rate*error
+   print(f"updated w = {w}") 
+
+   print(f"Prediction = {prediction}, actual={y}, errors={error}")
+   total_error += error**2
+     
+  cost=total_error/(2*m)
+  print(f"cost function is {cost}")
+  print("-"*70)
+
+
+
