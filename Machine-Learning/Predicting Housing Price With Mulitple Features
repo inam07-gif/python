@@ -1,0 +1,58 @@
+import pandas as pd
+import numpy as np
+
+df = pd.read_csv("cc.csv")
+xt=df[["age","rooms","bedrooms","population","households","income"]]
+yt=df["price"]
+
+xt=np.array(xt)
+yt=np.array(yt)
+
+take=xt[:,1]
+take_sq=take**2
+take_cu=take**3
+
+x_new=np.column_stack((xt[:,0],take,take_sq,take_cu,
+                      xt[:,2],xt[:,3],xt[:,4],xt[:,5]))
+
+xnw=x_new.mean(axis=0)
+xnd=x_new.std(axis=0)
+
+x_new=(x_new-xnw)/xnd
+
+
+w=np.zeros(x_new.shape[1])
+b=0
+lr=0.001
+epochs=100000
+
+for epoch in range(epochs):
+    for i in range(x_new.shape[0]):
+        x=x_new[i]
+        y=yt[i]
+
+        prediction=np.dot(x,w)+b
+        error=prediction-y
+
+        w=w-lr*error*x
+        b=b-lr*error
+        
+a=float(input("ENTER AGE: "))
+b1=float(input("ENTER ROOMS: "))
+c=float(input("ENTER BEDS: "))
+if c >= b1:
+    print("Beds cant be more than rooms")
+else:
+    d=float(input("ENTER POPULATION:"))
+    e=float(input("ENTER HOUSEHOLD: "))
+    f=float(input("ENTER INCOME: "))
+
+    user_feature=np.array([
+    a , b1, b1**2 , b1**3 , c , d , e , f
+    ],dtype=float)
+
+    user_feature = (user_feature - xnw) / xnd
+
+    predictions=np.dot(user_feature,w)+b
+
+    print(f"Your House value  is: {predictions} ")
