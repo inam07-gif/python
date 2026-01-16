@@ -22,7 +22,7 @@ x_new=(x_new-xnw)/xnd
 
 
 w=np.zeros(x_new.shape[1])
-b=0
+bias=0
 lr=0.001
 epochs=100000
 
@@ -31,11 +31,11 @@ for epoch in range(epochs):
         x=x_new[i]
         y=yt[i]
 
-        prediction=np.dot(x,w)+b
+        prediction=np.dot(x,w)+bias
         error=prediction-y
 
         w=w-lr*error*x
-        b=b-lr*error
+        bbias=bias-lr*error
         
 a=float(input("ENTER AGE: "))
 b1=float(input("ENTER ROOMS: "))
