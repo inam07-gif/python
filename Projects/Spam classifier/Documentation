@@ -1,0 +1,86 @@
+# Spam Classifier
+
+## Overview
+This project implements a machine learning–based spam message classification system.  
+The goal is to automatically identify whether a given text message is **spam** or **ham (not spam)** using Natural Language Processing (NLP) techniques and supervised learning.
+
+The model is trained on labeled text data and can also predict spam for **new user-input messages**.
+
+---
+
+## What This Project Does
+- Takes a text message as input
+- Processes and cleans the text
+- Converts text into numerical features
+- Classifies the message as **Spam** or **Not Spam**
+- Provides the **probability of spam**, not just a label
+
+---
+
+## How It Works
+
+### 1. Text Preprocessing
+Each message is cleaned to reduce noise and standardize input:
+- Convert text to lowercase
+- Remove punctuation and special characters
+- Tokenize text into words
+- Remove stopwords
+- Apply stemming
+
+This helps the model focus on meaningful words.
+
+---
+
+### 2. Feature Extraction (TF-IDF)
+The cleaned text is transformed into numerical form using **TF-IDF (Term Frequency–Inverse Document Frequency)**.
+
+TF-IDF:
+- Assigns importance to words based on their frequency
+- Reduces the impact of common words
+- Produces sparse feature vectors suitable for text classification
+
+---
+
+### 3. Model Training
+Machine learning model:
+- Multinomial Naive Bayes
+
+**Multinomial Naive Bayes** was selected as the final model because:
+- It performs well on sparse text data
+- It is fast and memory-efficient
+- It achieved high precision in spam detection
+
+---
+
+### 4. Prediction and Decision Threshold
+Instead of relying only on class labels, the model uses **probability-based predictions**.
+
+- The model outputs probabilities for both classes (spam and ham)
+- A decision threshold is applied to determine the final prediction
+- This allows better control over false positives and false negatives
+
+---
+
+### 5. User Input Support
+The trained model allows users to:
+- Enter a custom message
+- Receive a spam/ham prediction
+- See the associated spam probability
+
+This makes the system suitable for real-world usage.
+
+---
+
+## Libraries Used
+- **Python** – core programming language
+- **scikit-learn** – model training, evaluation, TF-IDF
+- **NLTK** – text preprocessing (tokenization, stopwords, stemming)
+- **pandas** – data handling
+- **NumPy** – numerical operations
+
+---
+
+
+## Conclusion
+This project demonstrates that classical machine learning techniques, when combined with proper text preprocessing and feature extraction, can effectively solve spam detection problems. Multinomial Naive Bayes proved to be a reliable and efficient choice for this task.
+
