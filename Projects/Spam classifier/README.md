@@ -25,6 +25,6 @@ To build an efficient and interpretable spam detection model capable of handling
 <li>Python</li>
 <li>scikit-learn</li>
 <li>NLTK</li>
-<li>pandas</li>
+<li>Pandas</li>
 <li>NumPy</li>
 </ul>
