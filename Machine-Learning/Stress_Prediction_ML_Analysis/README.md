@@ -1,13 +1,13 @@
 
-# 📱 Stress Prediction ML Analysis
+# Stress Prediction ML Analysis
 
-## 🎯 Project Objective
+##  Project Objective
 
 The objective of this project is to predict `Stress_Level` using smartphone usage behavior and lifestyle features. The study evaluates both linear and non-linear machine learning models to understand the underlying relationship between stress and productivity metrics.
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 The dataset contains 50,000 user records with the following features:
 
@@ -28,7 +28,7 @@ Target Variable:
 
 ---
 
-## ⚙️ Workflow
+## Workflow
 
 1. Data Cleaning (No missing values, no duplicates)
 2. Categorical Encoding (One-Hot Encoding)
@@ -39,7 +39,7 @@ Target Variable:
 
 ---
 
-## 📈 Model Results
+##  Model Results
 
 | Model | R² Score |
 |-------|----------|
@@ -49,7 +49,7 @@ Target Variable:
 
 ---
 
-## 🔍 Key Findings
+##  Key Findings
 
 - Linear Regression failed to capture predictive structure.
 - Random Forest achieved high performance due to non-linear modeling.
@@ -59,31 +59,19 @@ Target Variable:
 
 ---
 
-## 🧠 Conclusion
+##  Conclusion
 
 The analysis indicates that stress prediction in this dataset is primarily driven by productivity scores rather than direct smartphone usage metrics. Tree-based models outperform linear models due to their ability to capture non-linear patterns.
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Python
 - Pandas
 - NumPy
 - Scikit-learn
-- Matplotlib
 
 ---
 
-## 📌 Learning Outcome
-
-This project demonstrates:
-
-- Proper ML workflow execution
-- Model comparison techniques
-- Feature importance analysis
-- Detection of non-linear relationships
-- Data leakage awareness
-
----
 
