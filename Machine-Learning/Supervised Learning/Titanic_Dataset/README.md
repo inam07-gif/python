@@ -1,4 +1,10 @@
-# Titanic Survival Prediction – Machine Learning Project
+# 🚢 Titanic Survival Prediction
+
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![ML](https://img.shields.io/badge/Machine%20Learning-Classification-orange)
+![Models](https://img.shields.io/badge/Models-DT%20%7C%20KNN%20%7C%20RF%20%7C%20LR%20%7C%20SVC-purple)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://your-project.glitch.me)
+
 
 ##  Project Overview
 
