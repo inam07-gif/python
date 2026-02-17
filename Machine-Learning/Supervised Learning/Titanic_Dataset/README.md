@@ -6,10 +6,10 @@ This project is based on the famous **Titanic dataset**, where the goal is to pr
 
 It is a **Supervised Machine Learning – Classification problem**, because:
 
-* The target variable (`Survived`) has two classes:
+* The target variable (Survived) has two classes:
 
-  * `0` → Did Not Survive
-  * `1` → Survived
+  * 0 → Did Not Survive
+  * 1 → Survived
 
 The objective is to build classification models that can accurately predict survival based on passenger features.
 
@@ -32,7 +32,7 @@ The dataset contains information about passengers such as:
 
 ---
 
-## 📥 Dataset Source
+##  Dataset Source
 
 The dataset was obtained from the **Kaggle Titanic Machine Learning Competition**.
 
@@ -71,7 +71,7 @@ Each model was trained and evaluated using:
 
 ---
 
-## 🔄Project Workflow
+## Project Workflow
 
 1. Data Loading
 2. Data Cleaning
