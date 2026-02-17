@@ -1,79 +1,129 @@
 Diabetes Prediction using Machine Learning
 1. Introduction
 
-This project uses machine learning techniques to predict whether a patient has diabetes based on certain health-related measurements.
+This project applies machine learning techniques to predict whether a patient has diabetes based on selected health-related measurements.
 
-The dataset used in this project was originally provided by the National Institute of Diabetes and Digestive and Kidney Diseases. The goal is to build a classification model that can determine whether a patient is diabetic (1) or non-diabetic (0).
+The dataset was originally provided by the National Institute of Diabetes and Digestive and Kidney Diseases.
 
-This is a supervised learning problem under binary classification.
+The objective is to build a binary classification model that predicts:
+
+0 → Non-diabetic
+
+1 → Diabetic
+
+This problem falls under Supervised Learning (Classification).
 
 2. Dataset Description
 
-The dataset contains medical measurement records of female patients. Each row represents one patient, and each column represents a specific health-related feature.
+The dataset consists of structured medical records.
 
-Features Included:
+Each row represents one patient.
 
-Pregnancies – Number of times the patient has been pregnant
+Each column represents one feature (input variable) used for prediction.
 
-Glucose – Blood glucose level measured after a glucose test
+Features Included
 
-BloodPressure – Diastolic blood pressure value
+Pregnancies
 
-SkinThickness – Thickness of skin fold (used as a body measurement indicator)
+Number of times the patient has been pregnant
 
-Insulin – Insulin level measured after a test
+Glucose
 
-BMI – Body Mass Index (a value calculated using weight and height)
+Blood glucose concentration measured after a glucose test
 
-DiabetesPedigreeFunction – A score representing family history influence
+BloodPressure
 
-Age – Age of the patient in years
+Diastolic blood pressure value
 
-Outcome – Target variable (0 = Non-diabetic, 1 = Diabetic)
+SkinThickness
+
+Skin fold thickness measurement
+
+Insulin
+
+Serum insulin level measured after testing
+
+BMI (Body Mass Index)
+
+Calculated using weight and height
+
+DiabetesPedigreeFunction
+
+A numerical score indicating hereditary influence
+
+Age
+
+Age of the patient (in years)
+
+Outcome (Target Variable)
+
+0 → Non-diabetic
+
+1 → Diabetic
 
 3. Dataset Constraints
 
-Certain conditions were applied during data collection:
+The dataset was collected under specific conditions:
 
 All patients are female
 
-All patients are 21 years or older
+All patients are 21 years of age or older
 
 All patients belong to Pima Indian heritage
 
-This means the dataset represents a specific group of people and not the entire population.
+These constraints indicate that the dataset represents a specific demographic group, not a global population.
 
-4. Objective of the Project
+4. Project Objectives
 
-The main objectives of this project are:
+The primary objectives of this project are:
 
-To perform data preprocessing
+Perform data cleaning and preprocessing
 
-To handle missing or incorrect values
+Identify and handle missing or invalid values
 
-To apply machine learning classification algorithms
+Apply appropriate machine learning classification algorithms
 
-To evaluate model performance
+Evaluate model performance using standard metrics
 
-To predict diabetes status for new input data
+Develop a predictive model for new input data
 
 5. Limitations of the Dataset
 
 Gender Limitation
-The dataset includes only female patients. Therefore, the model may not perform accurately for male patients.
+
+Includes only female patients.
+
+Model predictions may not generalize to male patients.
 
 Ethnic Limitation
-All patients belong to one specific ethnic group. The model may not generalize well to other populations.
+
+Data represents only one ethnic group.
+
+Model performance may vary across different populations.
 
 Age Restriction
-Only patients aged 21 years and above are included. The model cannot be assumed to work for younger individuals.
 
-Limited Features
-The dataset includes only selected measurements. Other important health or lifestyle factors are not included.
+Contains data only for individuals aged 21 and above.
 
-Zero Values in Some Columns
-Some features contain zero values where zero is not logically possible (such as glucose or blood pressure). These need to be handled during preprocessing.
+Not suitable for predicting diabetes in younger individuals.
+
+Limited Feature Scope
+
+Only selected medical measurements are included.
+
+Lifestyle, diet, physical activity, and other potential risk factors are not present.
+
+Presence of Zero Values
+
+Some features contain zero values where zero is not realistically possible (e.g., glucose, blood pressure).
+
+These require careful preprocessing before model training.
 
 6. Conclusion
 
-This project demonstrates the application of machine learning techniques in healthcare prediction. However, due to dataset constraints and limitations, model results should be interpreted carefully and should not be considered a universal medical solution.
+This project demonstrates the structured application of machine learning in healthcare prediction tasks.
+
+While the model may achieve good predictive performance within this dataset,
+its applicability is limited by dataset constraints and demographic restrictions.
+
+Results should therefore be interpreted as model-based predictions, not medical diagnoses.
