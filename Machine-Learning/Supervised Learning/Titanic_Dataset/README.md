@@ -1,6 +1,5 @@
 
 # 🚢 Titan[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://your-project-name.glitch.me)
-ic Survival Prediction
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![ML](https://img.shields.io/badge/Machine%20Learning-Classification-orange)
