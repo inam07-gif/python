@@ -1,0 +1,93 @@
+# 📘 Project Documentation
+
+## 📌 Project Title
+Titanic Survival Prediction using Machine Learning
+
+---
+
+## 🎯 Objective
+
+The objective of this project was to build and compare multiple machine learning
+classification models to predict whether a passenger survived the Titanic disaster.
+
+This is a supervised binary classification problem where:
+
+- 0 → Did Not Survive
+- 1 → Survived
+
+---
+
+## 📊 Dataset Description
+
+The dataset contains passenger-level information including:
+
+- Passenger Class (Pclass)
+- Gender (Sex)
+- Age
+- Number of Siblings/Spouses (SibSp)
+- Number of Parents/Children (Parch)
+- Fare
+- Embarked Port
+- Survival Status (Target)
+
+The dataset required preprocessing including handling missing values and encoding categorical variables.
+
+---
+
+## 🛠 Data Preprocessing Steps
+
+The following preprocessing steps were performed:
+
+- Missing values in `Age` were filled using median.
+- Missing values in `Embarked` were filled using mode.
+- Irrelevant columns such as `Name`, `Ticket`, `Cabin`, and `PassengerId` were removed.
+- Categorical features were encoded using one-hot encoding.
+- Train-test split was performed.
+- Feature scaling was applied where required using `StandardScaler`.
+- Pipelines were used to prevent data leakage during model training and cross-validation.
+
+---
+
+## 🤖 Models Implemented
+
+The following models were trained and evaluated:
+
+1. Logistic Regression
+2. Logistic Regression with Polynomial Features
+3. Decision Tree Classifier
+4. Random Forest Classifier
+5. Support Vector Classifier (SVC)
+
+Hyperparameter tuning was performed using `GridSearchCV` for selected models.
+
+---
+
+## 📈 Evaluation Metrics
+
+Models were evaluated using:
+
+- Accuracy
+- Precision
+- (Optional: Recall & F1-score if included)
+
+Accuracy measures overall correctness, while precision measures reliability of positive survival predictions.
+
+---
+
+# 🏁 Final Conclusion
+
+After comparing all models:
+
+- Random Forest achieved the highest overall accuracy (~80%).
+- Logistic Regression improved significantly after adding polynomial features,
+  indicating the presence of non-linear relationships in the dataset.
+- SVC showed competitive performance with strong precision.
+- A single Decision Tree underperformed due to higher variance and overfitting tendency.
+
+The analysis demonstrates that ensemble methods such as Random Forest perform
+better for this dataset due to their ability to capture feature interactions
+and reduce overfitting.
+
+This project successfully demonstrates an end-to-end machine learning workflow,
+including preprocessing, model building, hyperparameter tuning, evaluation,
+and performance comparison.
