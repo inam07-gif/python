@@ -65,9 +65,9 @@ It is one of the most popular beginner-friendly ML datasets used to understand:
 The following classification algorithms were implemented and compared:
 
 1. **Decision Tree Classifier**
-2. **K-Nearest Neighbors (KNN)**
+2. **Logistic Regression(without polynomial featuring)**
 3. **Random Forest Classifier**
-4. **Logistic Regression**
+4. **Logistic Regression(with polynomial featuring)**
 5. **Support Vector Classifier (SVC)**
 
 Each model was trained and evaluated using:
