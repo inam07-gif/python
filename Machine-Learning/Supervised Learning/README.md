@@ -1,5 +1,5 @@
 # Supervised Learning
-## Note: All Datasets have been imported from Kaggle
+## Note: All datasets used in this project were sourced from Kaggle
 
 ## Overview
 
