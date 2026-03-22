@@ -82,11 +82,11 @@ Although multiple models can be applied, we **stopped at Logistic Regression** b
   * Efficiency
   * Generalization
 
-👉 Therefore, further model experimentation was not required.
+ Therefore, further model experimentation was not required.
 
 ---
 
-## 🧪 How to Use (Prediction)
+##  How to Use (Prediction)
 
 Example for making predictions:
 
